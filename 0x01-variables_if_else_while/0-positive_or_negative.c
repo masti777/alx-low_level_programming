@@ -1,34 +1,29 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints if number is positive, zero or negative
+ *
+ * Return: Always (Success)
+ */
 int main(void)
 {
+int n;
+
 srand(time(0));
-        n = rand() - RAND_MAX / 2;
-
-	int n,c,i;
-        c-i-'0';
-for (c='0'; c<='9'; c++)
+n = rand() - RAND_MAX / 2;
+if (n > 0)
 {
-   for (i='0';i<='9'; i++)
+printf("%d is positive\n", n);
+}
+else if (n == 0)
 {
-     putchar(c);
-     putchar(i);
-       if ((c!='9') || (c=='9' && i !='9'))
+printf("%d is zero\n", n);
+}
+else
 {
-   putchar(',');
-   putchar(',');
+printf("%d is negative\n", n);
 }
-
-}
-
-}
-putchar('/n');
-return(0);
-}
-
-	
-	return (0);
+return (0);
 }
